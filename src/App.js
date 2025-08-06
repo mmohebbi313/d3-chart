@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Chart from "./chart/chart";
-import Header from "./header/header";
+import Chart from "./components/chart/chart";
+import Header from "./components/header/header";
 import './App.css'
+
 
 const App = () => {
   const [charts, setCharts] = useState([]);
@@ -14,9 +15,16 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app-div">
+    <div class="flex justify-center" >
       <Header/>
-      <div className="div-chart">
+      <div class="flex flex-col justify-between w-[70vw] h-screen mt-[80px]      [@media(min-width:1400px)]:flex-row
+            [@media(min-width:1400px)]:justify-between
+            [@media(min-width:1400px)]:w-screen
+            [@media(min-width:1400px)]:h-screen
+            [@media(min-width:1400px)]:mt-[60px]
+            [@media(min-width:1400px)]:pl-[60px]
+            [@media(min-width:1400px)]:pr-[60px]
+            [@media(min-width:1400px)]:items-center">
       {charts.map((chart, index) => (
         <Chart key={index} title={chart.title} data={chart.data} />
       ))}
