@@ -5,7 +5,7 @@ import {
   isMultiSeries,
   extractSingleSeries,
   extractMultiSeries
-} from "../../utils";
+} from "../utils";
 
 function Chart({ title, data }) {
   const svgRef = useRef();
@@ -18,7 +18,7 @@ function Chart({ title, data }) {
 
     const width =   sizing <= 676 ? 460 : 600;
     const height =  sizing <= 676 ? 245 : 300;
-    const margin = { top: 20, right: 30, bottom: 30, left: 40 };
+    const margin = sizing <= 676 ? { top: 20, right: 25, bottom: 30, left: 15 }  : { top: 20, right: 30, bottom: 30, left: 40 };
 
     const series = isMultiSeries(data)
       ? extractMultiSeries(data)

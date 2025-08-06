@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Chart from "./header/chart/chart";
+import Chart from "./chart/chart";
 import Header from "./header/header";
 import './App.css'
 
