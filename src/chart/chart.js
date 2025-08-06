@@ -88,7 +88,7 @@ function Chart({ title, data }) {
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 
-    const width = sizing <= 676 ? 350 : 600;
+    const width = sizing <= 676 ? 330 : 600;
     const height = sizing <= 676 ? 245 : 300;
     const margin = sizing <= 676
       ? { top: 20, right: 25, bottom: 30, left: 15 }
@@ -141,7 +141,7 @@ function Chart({ title, data }) {
       <h3>{title}</h3>
       <svg
         ref={svgRef}
-        width={sizing <= 676 ? 370 : 600}
+        width={sizing <= 676 ? 350 : 600}
         height={300}
       />
     </div>
