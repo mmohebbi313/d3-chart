@@ -16,7 +16,7 @@ function Chart({ title, data }) {
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 
-    const width =   sizing <= 676 ? 460 : 600;
+    const width =   sizing <= 676 ? 380 : 600;
     const height =  sizing <= 676 ? 245 : 300;
     const margin = sizing <= 676 ? { top: 20, right: 25, bottom: 30, left: 15 }  : { top: 20, right: 30, bottom: 30, left: 40 };
 
@@ -61,7 +61,7 @@ function Chart({ title, data }) {
   return (
     <div className="div-box">
       <h3>{title}</h3>
-      <svg ref={svgRef} width={600} height={300} />
+      <svg ref={svgRef} width={ sizing <= 676 ? 400 : 600 } height={300} />
     </div>
   );
 }
