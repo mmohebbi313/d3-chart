@@ -16,9 +16,9 @@ function Chart({ title, data }) {
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 
-    const width = sizing <= 676 ? 330 : 600;
-    const height = sizing <= 676 ? 245 : 300;
-    const margin = sizing <= 676
+    const width = sizing <= 767 ? 330 : 600;
+    const height = sizing <= 767 ? 245 : 300;
+    const margin = sizing <= 767
       ? { top: 20, right: 25, bottom: 30, left: 15 }
       : { top: 20, right: 30, bottom: 30, left: 40 };
 
@@ -41,8 +41,8 @@ function Chart({ title, data }) {
       .x(d => xScale(d.x))
       .y(d => yScale(d.y));
 
-    // تعیین فاصله بین تیک‌های محور X
-    const xTickStep = sizing <= 676 ? 10000 : 5000;
+
+    const xTickStep = sizing <= 767 ? 10000 : 5000;
     const xTickCount = (xScale.domain()[1] - xScale.domain()[0]) / xTickStep;
 
     svg.append("g")
@@ -66,14 +66,14 @@ function Chart({ title, data }) {
 
   return (
     <div class="bg-[#bfbfbf] p-[10px] rounded-[10px] shadow-[0_0_15px_-5px_black]
-    transition-all duration-500 ease-in-out
-     max-[767px]:w-[328px] max-[767px]:h-[290px] max-[767px]:p-[5px] max-[767px]:mt-[30px]
+    transition-all duration-500 ease-in-out 
+     max-[767px]:w-[328px] max-[767px]:h-[290px] max-[767px]:p-[5px] max-[767px]:mt-[30px] max-[767px]:items-center:
     hover:-translate-y-[5px] hover:bg-[#e0dede] hover:shadow-[0_0_20px_-3px_rgb(72,72,72)]
      " >
       <h3>{title}</h3>
       <svg
         ref={svgRef}
-        width={sizing <= 676 ? 350 : 600}
+        width={sizing <= 767 ? 350 : 600}
         height={300}
       />
     </div>
