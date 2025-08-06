@@ -66,7 +66,7 @@ function Chart({ title, data }) {
 
   return (
     <div class="bg-[#bfbfbf] p-[10px] rounded-[10px] shadow-[0_0_15px_-5px_black]
-    transition-all duration-500 ease-in-out 
+    transition-all duration-500 ease-in-out mt-[30px]
      max-[767px]:w-[328px] max-[767px]:h-[290px] max-[767px]:p-[5px] max-[767px]:mt-[30px]
     hover:-translate-y-[5px] hover:bg-[#e0dede] hover:shadow-[0_0_20px_-3px_rgb(72,72,72)]
      " >

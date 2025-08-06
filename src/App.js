@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div class="flex justify-center" >
       <Header/>
-      <div class="flex flex-col ali items-center justify-between w-[70vw] h-screen mt-[80px]    [@media(min-width:1400px)]:flex-row
+      <div class="flex flex-col ali items-center justify-between w-[70vw] h-screen mt-[90px]    [@media(min-width:1400px)]:flex-row
            [@media(min-width:1400px)]:flex
            [@media(min-width:1400px)]:justify-between
             [@media(min-width:1400px)]:w-screen
