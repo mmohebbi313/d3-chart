@@ -17,14 +17,6 @@ This is a responsive data visualization project built using React.js, D3.js, and
 - 🎨 Styled using Tailwind CSS
 - ⚛️ Built with React.js functional components
 
-## 📸 Screenshots
-
-| Acceleration Z1 Chart | Thickness Video Profiling |
-|-----------------------|----------------------------|
-| ![acceleration chart](./screenshot1.png) | ![profiling chart](./screenshot2.png) |
-
-> *Note: Replace the above image paths with actual image files if you want to include screenshots.*
-
 ## 🛠️ Technologies Used
 
 - [React.js](https://reactjs.org/)
