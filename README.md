@@ -1,6 +1,6 @@
 # 📊 Frontend Developer Technical Test
 
-#Click on the link below to see the demo version.
+# Click on the link below to see the demo version.
 Link:https://github.com/mmohebbi313/d3-chart
 
 This is a responsive data visualization project built using React.js, D3.js, and Tailwind CSS. It presents two charts for sensor data analysis on mobile, tablet, and desktop devices.
