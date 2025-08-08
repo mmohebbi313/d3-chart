@@ -19,7 +19,7 @@ function Chart({ title, data }) {
     const width = sizing <= 767 ? 330 : 600;
     const height = sizing <= 767 ? 245 : 300;
     const margin = sizing <= 767
-      ? { top: 20, right: 25, bottom: 30, left: 15 }
+      ? { top: 20, right: 25, bottom: 30, left: 20 }
       : { top: 20, right: 30, bottom: 30, left: 40 };
 
     const series = isMultiSeries(data)
